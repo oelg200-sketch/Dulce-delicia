@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍦</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce Delicia | Postres, Churros, Chocobananos y Paletas</title>
+  <meta name="description" content="Dulce Delicia — dresas con crema, chocobananos, churros preparados, paletas preparadas y más. ¡Pide tus postres favoritos a domicilio!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-emoji">🍦</span>
+        <span class="logo-text">
+          <span class="logo-name">Dulce Delicia</span>
+          <span class="logo-sub">Postres & Paletas</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#contacto" class="btn-nav-order">Hacer Pedido</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/36361401/pexels-photo-36361401.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920" alt="Churros con chocolate" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-floats" id="heroFloats"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-dot"></span>
+        <span>¡Postres frescos todos los días!</span>
+      </div>
+
+      <h1 class="hero-title reveal" style="--delay: 0.1s">
+        ¡Sabores que
+        <span class="hero-script">endulzan</span>
+        tu día!
+      </h1>
+
+      <p class="hero-subtitle reveal" style="--delay: 0.2s">
+        Dresas con crema, chocobananos, churros preparados, paletas preparadas
+        y mucho más. Hecho con amor, ingredientes frescos y mucho sabor.
+      </p>
+
+      <div class="hero-cta reveal" style="--delay: 0.3s">
+        <a href="#productos" class="btn-primary">
+          <span>Ver Productos</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#contacto" class="btn-glass">Hacer Pedido</a>
+      </div>
+
+      <div class="hero-stats reveal" style="--delay: 0.4s">
+        <div class="stat-card">
+          <p class="stat-value">+30</p>
+          <p class="stat-label">Productos</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">+5,000</p>
+          <p class="stat-label">Clientes felices</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">4.9★</p>
+          <p class="stat-label">Calificación</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z" fill="#fff5f0">
+          <animate attributeName="d" dur="8s" repeatCount="indefinite"
+            values="M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z;M0,70 C240,30 480,100 720,60 C960,20 1200,50 1440,80 L1440,120 L0,120 Z;M0,60 C240,100 480,20 720,50 C960,80 1200,110 1440,60 L1440,120 L0,120 Z" />
+        </path>
+        <path d="M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z" fill="#ffe8df" fill-opacity="0.6">
+          <animate attributeName="d" dur="6s" repeatCount="indefinite"
+            values="M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z;M0,90 C240,60 480,30 720,80 C960,110 1200,40 1440,70 L1440,120 L0,120 Z;M0,80 C240,40 480,110 720,70 C960,30 1200,60 1440,90 L1440,120 L0,120 Z" />
+        </path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="productos" class="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestro Menú</span>
+        <h2 class="section-title">Delicias que <span class="text-pink">enamorarán</span> tu paladar</h2>
+        <p class="section-desc">Descubre nuestra variedad de postres preparados con los mejores ingredientes. ¡Cada bocado es pura felicidad!</p>
+      </div>
+
+      <!-- Category filters -->
+      <div class="product-filters" id="productFilters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="dresas">Dresas con Crema</button>
+        <button class="filter-btn" data-category="chocobananos">Chocobananos</button>
+        <button class="filter-btn" data-category="churros">Churros Preparados</button>
+        <button class="filter-btn" data-category="paletas">Paletas Preparadas</button>
+        <button class="filter-btn" data-category="otros">Más Dulces</button>
+      </div>
+
+      <!-- Product grid -->
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="nosotros" class="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img-main">
+          <img src="https://images.pexels.com/photos/35661532/pexels-photo-35661532.jpeg?auto=compress&cs=tinysrgb&h=600&w=500" alt="Vitrina de postres" />
+        </div>
+        <div class="about-img-small">
+          <img src="https://images.pexels.com/photos/39490935/pexels-photo-39490935.jpeg?auto=compress&cs=tinysrgb&h=400&w=400" alt="Paletas de chocolate" />
+        </div>
+        <div class="about-badge">
+          <p class="about-badge-num">100%</p>
+          <p class="about-badge-label">Hecho en casa</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">Sobre Nosotros</span>
+        <h2 class="section-title">Pasión por <span class="text-pink">endulzar</span> tu vida</h2>
+        <p class="about-desc">
+          En Dulce Delicia preparamos cada postre con dedicación y amor. Usamos
+          ingredientes frescos y de la mejor calidad para crear sabores únicos
+          que te harán volver por más. Desde nuestras dresas con crema hasta
+          nuestros churros preparados, todo es hecho al momento.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">🍓</div>
+            <div>
+              <h3>Ingredientes Frescos</h3>
+              <p>Frutas frescas, crema de primera y chocolate premium en cada producto.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🚚</div>
+            <div>
+              <h3>Domicilio Rápido</h3>
+              <p>Entregamos tus postres favoritos directamente en tu puerta.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">👨‍🍳</div>
+            <div>
+              <h3>Hecho al Momento</h3>
+              <p>Preparamos tu pedido al instante para que llegue fresco y delicioso.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">💝</div>
+            <div>
+              <h3>Con Amor</h3>
+              <p>Cada postre es elaborado con cariño y atención a cada detalle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="opiniones" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Opiniones</span>
+        <h2 class="section-title">Lo que dicen <span class="text-pink">nuestros clientes</span></h2>
+        <p class="section-desc">Miles de personas ya disfrutan de nuestros postres. ¡Únete a la familia Dulce Delicia!</p>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / ORDER ============ -->
+  <section id="contacto" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag">Haz tu pedido</span>
+        <h2 class="section-title">Pide tus <span class="text-pink">postres favoritos</span></h2>
+        <p class="contact-desc">
+          Llámanos, escríbenos por WhatsApp o llena el formulario. Te respondemos
+          rapidísimo y preparamos tu pedido al momento.
+        </p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h3>Teléfono</h3>
+              <p>+503 7777-8899</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>pedidos@dulcedelicia.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3>Ubicación</h3>
+              <p>Av. Principal #45, San Salvador</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3>Horarios</h3>
+              <p>Lun-Dom: 9:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-whatsapp" id="whatsappBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.006c6.585 0 11.946-5.36 11.948-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Pedir por WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form id="orderForm" class="order-form">
+          <h3 class="form-title">Realiza tu pedido</h3>
+
+          <div class="form-field">
+            <label for="custName">Nombre</label>
+            <div class="input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input type="text" id="custName" name="custName" required placeholder="Tu nombre" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="custPhone">Teléfono</label>
+            <div class="input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <input type="tel" id="custPhone" name="custPhone" required placeholder="Tu teléfono" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="custProduct">¿Qué deseas pedir?</label>
+            <div class="input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <select id="custProduct" name="custProduct" required>
+                <option value="">Selecciona un producto</option>
+                <option value="Dresa con crema">Dresa con Crema</option>
+                <option value="Chocobanano">Chocobanano</option>
+                <option value="Churros preparados">Churros Preparados</option>
+                <option value="Paleta preparada">Paleta Preparada</option>
+                <option value="Otro">Otro postre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="custQty">Cantidad</label>
+            <div class="input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h12"/></svg>
+              <input type="number" id="custQty" name="custQty" min="1" value="1" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="custMsg">Notas adicionales</label>
+            <div class="input-wrap input-wrap-textarea">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              <textarea id="custMsg" name="custMsg" rows="3" placeholder="Ej: sin nueces, extra chocolate..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Enviar Pedido
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>¡Pedido enviado!</h3>
+          <p>Nos pondremos en contacto contigo muy pronto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <span class="logo-emoji">🍦</span>
+          <span class="logo-text">
+            <span class="logo-name">Dulce Delicia</span>
+            <span class="logo-sub">Postres & Paletas</span>
+          </span>
+        </div>
+        <p class="footer-desc">Tu tienda de postres favorita. Dresas con crema, chocobananos, churros preparados, paletas y mucho más. ¡Hecho con amor!</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.549 4.142 1.595 5.945L0 24l6.335-1.652a11.882 11.882 0 0 0 5.71 1.447h.006c6.585 0 11.946-5.36 11.948-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Productos</h3>
+        <ul>
+          <li><a href="#productos">Dresas con Crema</a></li>
+          <li><a href="#productos">Chocobananos</a></li>
+          <li><a href="#productos">Churros Preparados</a></li>
+          <li><a href="#productos">Paletas Preparadas</a></li>
+          <li><a href="#productos">Más Dulces</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#contacto">Hacer Pedido</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Av. Principal #45, San Salvador</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+503 7777-8899</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>pedidos@dulcedelicia.com</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Lun-Dom: 9:00 AM - 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Dulce Delicia. Todos los derechos reservados. Hecho con 💝</p>
+    </div>
+  </footer>
+
+  <!-- Cart floating button -->
+  <button class="cart-fab" id="cartFab" aria-label="Carrito">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Tu Pedido</h3>
+      <button class="cart-close" id="cartClose" aria-label="Cerrar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <p class="cart-empty">Tu carrito está vacío.<br>¡Agrega algo delicioso!</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn-primary cart-checkout" id="cartCheckout">Hacer Pedido</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
